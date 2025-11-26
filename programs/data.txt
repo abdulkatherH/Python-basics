@@ -1,0 +1,4 @@
+You need both index and value
+You want cleaner loops
+You want to avoid manual counters
+You want code thats easier to read and maintain

@@ -56,3 +56,27 @@ print("sum: ",sum(marks.values()))
 print("len: ",len(marks))
 avg = sum(marks.values()) / len(marks)
 print("Average marks: ", avg)
+
+
+def factorial(n):
+    if n == 0:
+        return 1
+    return n * factorial(n-1)
+
+print(factorial(5))
+
+# Output:
+# and, fun, is, powerful, python, to, welcome, world
+my_sen = "Welcome to Python World and Python is fun and powerful"
+words = sorted(set(my_sen.lower().split()))
+print('words: ', words)
+result = ", ".join(words)
+print('result: ', result)
+# print(my_sen[::-1])
+# print(my_sen)
+unique = []
+for i in my_sen.split(' '):
+    if i not in unique:
+        unique.append(i)
+
+print('Unique list: ', sorted(unique))

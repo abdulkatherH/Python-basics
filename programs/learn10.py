@@ -15,4 +15,4 @@ def frequency(arr):
     for item in arr:
         freq[item] = freq.get(item, 0) + 1
     return freq
-print('FREQUENCY OF EACH NUMBER: ', frequency([1,2,3,3,4,4,4,4,4,5,5]))
+print('FREQUENCY OF EACH NUMBERS: ', frequency([1,2,3,3,4,4,4,4,4,5,5]))

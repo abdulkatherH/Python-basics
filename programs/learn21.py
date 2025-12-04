@@ -3,15 +3,27 @@
 # if words is available in chars character
 words = ["cat","bt","hat","tree"]
 chars = "atach"
+# def can_form(word, chars):
+#     chars_list = list(chars)
+
+#     for ch in word:
+#         if ch in chars_list:
+#             chars_list.remove(ch)
+#         else:
+#             return False
+#     return True
+# Another way
 def can_form(word, chars):
-    chars_list = list(chars)
-    print('chars_list: ',chars_list)
-    print('word: ', word)
+    count = {}
+
+    for c in chars:
+        count[c] = count.get(c, 0) + 1
+
     for ch in word:
-        if ch in chars_list:
-            chars_list.remove(ch)
-        else:
+        if ch not in count or count[ch] == 0:
             return False
+        count[ch] -= 1
+
     return True
 
 for word in words:

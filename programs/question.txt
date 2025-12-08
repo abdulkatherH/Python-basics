@@ -1,0 +1,49 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+# print("Try programiz.pro")
+
+# def char_occ(data):
+text = "It lacks visual styling like bold, italics, or font colors. "
+result = {}
+for ch in text:
+    # print(ch)
+    result[ch]= result.get(ch, 0) + 1
+print(result)
+ignored = {' ', '.', ','}
+max_char, max_count = None, None
+
+for char, count in result.items():
+    if char in ignored:
+        continue
+    if max_count is None or count > max_count:
+        max_char = char
+        max_count = count
+print("Max character:", max_char)
+print("Count:", max_count)
+    
+
+# print(char_occ(text))
+
+
+# a = [[1, 2], [3, 4]]
+# b = a.copy()
+# b[0].append(99)
+# print(a)
+# a = [1, 2, 3]
+# b = a[:]
+# b.append(4)
+# print(a)
+
+# what is havings 
+# what is rank
+# what is view
+
+# employees(emp_id, emp_name)
+# sales(sale_id, emp_id, amount)
+
+# user find duplicate emails
+
+# select DISTINC * from user where email=
+
+# select * from employee where empl_id!=(select emp_id from sales)
+# select * from sales.s, employee.e where s.emp_id != e.em?
